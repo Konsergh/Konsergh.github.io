@@ -1,0 +1,249 @@
+body{
+	width: 1088px;
+	margin: 0 auto;
+	background: url("images/textures/008.jpg") no-repeat center center;
+	font-family: Arial, Verdana,sans-serif;
+}
+.clearfix{
+	content: '';
+	display: table;
+	width: 100%;
+	clear: both;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style-type: none;
+}
+.logo{
+	background: url("images/logo.png") no-repeat;
+	width: 500px;
+	height: 70px;
+	margin: 50px auto 0;
+}
+.logo h1{
+	padding: 8px 15px 0 95px;
+	font-size: 52px;
+	color: #fff;
+	text-shadow: 5px 2px blue ;
+}
+.container {
+	background-color: #5F6263;
+	padding-top: 60px;
+	padding-bottom: 10px;
+	border-radius: 18px;
+	margin-top: 10px;
+}
+.menu{
+	margin: 0 auto;
+	margin-bottom: -35px;
+	margin-left: -10px;
+	height: 100px;
+}
+.navigation{
+	width: 100%;
+}
+
+.navigation ul a li{
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	background: linear-gradient(#1250F3,#6F91EB);
+	padding: 8px 0 16px;
+	margin-right: 5px;
+	width: 200px;
+	border-top-left-radius: 12px;
+ 	border-top-right-radius: 12px;
+ 	float: left;
+ 	font-weight: bold;
+}
+
+.navigation ul a:before{
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-bottom:  17px solid #1250F3 ;
+	border-left: 17px solid transparent;
+	border-right: 17px solid transparent;
+	margin: -13px 0 0 84px;
+}
+.navigation ul a .home:after{
+	content: 'Home';
+	position: absolute; bottom: 0; left: 115px;
+	width: 201px;
+	height: 35px;
+	margin: -13px 0 0 -116px;
+	border-top-left-radius: 12px;
+ 	border-top-right-radius: 12px;
+	background: url(images/home.png) no-repeat bottom,linear-gradient(#fff,#1250F3);
+	background-color: #fff;
+	opacity: 0;	
+	color: #fff;
+	transition: 0.3s;
+
+}
+.navigation ul a .home:hover::after{
+	height: 100px;
+	opacity: 1;
+	transition: 0.5s;
+	color: #1250F3 ;
+}
+.navigation ul a .home:hover{
+	color: #1250F3 ;
+	transition: 0.5s;
+}
+.navigation ul a .Upcoming:after{
+	content: 'Upcoming Flights';
+	position: absolute; bottom: 0; left: 115px;
+	width: 201px;
+	height: 35px;
+	margin: -13px 0 0 -116px;
+	border-top-left-radius: 12px;
+ 	border-top-right-radius: 12px;
+	background: url(images/upcomingFlights.png) no-repeat bottom,linear-gradient(#fff,#1250F3);
+	background-color: #fff;
+	opacity: 0;	
+	color: #fff;
+	transition: 0.3s;
+
+}
+.navigation ul a .Upcoming:hover::after{
+	height: 100px;
+	opacity: 1;
+	transition: 0.5s;
+	color: #1250F3 ;
+}
+.navigation ul a .Upcoming:hover{
+	color: rgb(248,130,4);
+	transition: 0.5s;
+}
+.navigation ul a .About:after{
+	content: 'About Us';
+	position: absolute; bottom: 0; left: 115px;
+	width: 201px;
+	height: 35px;
+	margin: -13px 0 0 -116px;
+	border-top-left-radius: 12px;
+ 	border-top-right-radius: 12px;
+	background: url(images/logo.png) no-repeat bottom,linear-gradient(#fff,#1250F3);
+	background-color: #fff;
+	opacity: 0;	
+	color: #fff;
+	transition: 0.3s;
+
+}
+.navigation ul a .About:hover::after{
+	height: 100px;
+	opacity: 1;
+	transition: 0.5s;
+	color: #1250F3 ;
+}
+.navigation ul a .About:hover{
+	color: rgb(248,130,4);
+	transition: 0.5s;
+}
+.navigation ul a .Travel:after{
+	content: 'Travel Guide';
+	position: absolute; bottom: 0; left: 115px;
+	width: 201px;
+	height: 35px;
+	margin: -13px 0 0 -116px;
+	border-top-left-radius: 12px;
+ 	border-top-right-radius: 12px;
+	background: url(images/travelGuide.png) no-repeat bottom,linear-gradient(#fff,#1250F3);
+	background-color: #fff;
+	opacity: 0;	
+	color: #fff;
+	transition: 0.3s;
+
+}
+.navigation ul a .Travel:hover::after{
+	height: 100px;
+	opacity: 1;
+	transition: 0.5s;
+	color: #1250F3 ;
+}
+.navigation ul a .Travel:hover{
+	color: rgb(248,130,4);
+	transition: 0.5s;
+}
+.navigation ul a .Contact:after{
+	content: 'Contact Us';
+	position: absolute; bottom: 0; left: 115px;
+	width: 201px;
+	height: 35px;
+	margin: -13px 0 0 -116px;
+	border-top-left-radius: 12px;
+ 	border-top-right-radius: 12px;
+	background: url(images/contactUs.png) no-repeat bottom,linear-gradient(#fff,#1250F3);
+	background-color: #fff;
+	opacity: 0;	
+	color: #fff;
+	transition: 0.3s;
+
+}
+.navigation ul a .Contact:hover::after{
+	height: 100px;
+	opacity: 1;
+	transition: 0.5s;
+	color: #1250F3 ;
+}
+.navigation ul a .Contact:hover{
+	color: rgb(248,130,4);
+	transition: 0.5s;
+}
+.sidebar{
+	background-color: #80DDFE;
+	margin: 0 auto;
+	width: 98%;
+	max-height: 98%;
+	border-radius: 18px;
+}
+.side{
+	width: 62%;
+	margin: 0 auto;
+}
+.imag{
+	width: 100%;
+}
+.imag img{
+	max-width: 100%;
+	border-radius: 18px;
+	margin-top: 20px;
+}
+
+.side h1{
+	color: rgb(34, 158, 168);
+
+}
+.blocks{
+	margin: 0 auto;
+	width: 100%;
+	height: 200px;
+}
+.block_travel, .block_others{
+	width: 50%;
+	float: left;
+}
+.block_travel a, .block_others a{
+	color: rgb(255,155,5);
+}
+.blocks_head{
+	color: rgb(50,150,170);
+}
+.block_travel .more, .block_others .more{
+	color: rgb(50,150,170);
+}
+footer{
+	text-align: center;
+	color: #E4EF01;
+	margin-bottom: 60px;
+}
+footer a{
+		color: #fff;
+	}
+
