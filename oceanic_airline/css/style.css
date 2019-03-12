@@ -17,7 +17,7 @@ ul{
 	list-style-type: none;
 }
 .logo{
-	background: url("images/logo.png") no-repeat;
+	background: url("../images/logo.png") no-repeat;
 	width: 500px;
 	height: 70px;
 	margin: 50px auto 0;
@@ -79,7 +79,7 @@ ul{
 	margin: -13px 0 0 -116px;
 	border-top-left-radius: 12px;
  	border-top-right-radius: 12px;
-	background: url(images/home.png) no-repeat bottom,linear-gradient(#fff,#1250F3);
+	background: url(../images/home.png) no-repeat bottom,linear-gradient(#fff,#1250F3);
 	background-color: #fff;
 	opacity: 0;	
 	color: #fff;
@@ -104,7 +104,7 @@ ul{
 	margin: -13px 0 0 -116px;
 	border-top-left-radius: 12px;
  	border-top-right-radius: 12px;
-	background: url(images/upcomingFlights.png) no-repeat bottom,linear-gradient(#fff,#1250F3);
+	background: url(../images/upcomingFlights.png) no-repeat bottom,linear-gradient(#fff,#1250F3);
 	background-color: #fff;
 	opacity: 0;	
 	color: #fff;
@@ -129,7 +129,7 @@ ul{
 	margin: -13px 0 0 -116px;
 	border-top-left-radius: 12px;
  	border-top-right-radius: 12px;
-	background: url(images/logo.png) no-repeat bottom,linear-gradient(#fff,#1250F3);
+	background: url(../images/logo.png) no-repeat bottom,linear-gradient(#fff,#1250F3);
 	background-color: #fff;
 	opacity: 0;	
 	color: #fff;
@@ -154,7 +154,7 @@ ul{
 	margin: -13px 0 0 -116px;
 	border-top-left-radius: 12px;
  	border-top-right-radius: 12px;
-	background: url(images/travelGuide.png) no-repeat bottom,linear-gradient(#fff,#1250F3);
+	background: url(../images/travelGuide.png) no-repeat bottom,linear-gradient(#fff,#1250F3);
 	background-color: #fff;
 	opacity: 0;	
 	color: #fff;
@@ -179,7 +179,7 @@ ul{
 	margin: -13px 0 0 -116px;
 	border-top-left-radius: 12px;
  	border-top-right-radius: 12px;
-	background: url(images/contactUs.png) no-repeat bottom,linear-gradient(#fff,#1250F3);
+	background: url(../images/contactUs.png) no-repeat bottom,linear-gradient(#fff,#1250F3);
 	background-color: #fff;
 	opacity: 0;	
 	color: #fff;
