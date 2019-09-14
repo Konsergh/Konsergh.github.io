@@ -24,6 +24,8 @@ section
 	width: 100%
 	background: #191919
 	color: #fff
+	img
+		width: 100%
 	&-phones
 		padding-left: 121px
 		&__number
@@ -54,10 +56,11 @@ section
 		background: #f7b516
 		padding: 30px 80px
 		&__list
-			margin-top: 20px
+			margin-top: 20px			
 			&_l
 				margin-left: 35px
 				padding-bottom: 10px
+				font-size: 16px
 	.advantage__icon
 		float: left	
 	h2
@@ -74,12 +77,14 @@ section
 .header-price
 	margin-bottom: 40px
 	text-align: right
+.container_relative
+	position: relative
 .form_price
-	float: right
+	position: absolute
+	right: 0
 	// margin-top: 85px
 	&-header
 		text-align: right
-		width: 85.5%
 	&-email, &-tel
 		padding: 20px
 		margin: 5px
@@ -145,7 +150,6 @@ section
 		cursor: pointer
 		text-transform: uppercase
 		font-family: 'Proxima Nova Bd'
-		font-size: 16px
 	&-number
 		font-size: 22px
 .form
@@ -181,7 +185,7 @@ section
 		a
 			color: #fff
 	img
-		width: 140%
+		width: 100%
 		margin-left: 50px
 	&-more
 		padding-left: 20px
