@@ -65,9 +65,9 @@
 		<div class="container container_relative">
 			<div class="form_price">
 				<h2 class="form_price-header">Получите прайс прямо сейчас на электронную почту!</h2>
-				<form action="#" class="form">
-					<input type="email" class="form_price-email" placeholder="ВВЕДИТЕ ВАШ E-MAIL">
-					<input type="tel" class="form_price-tel" placeholder="ВВЕДИТЕ ВАШ ТЕЛЕФОН"><br>
+				<form action="telegram.php" method="POST" class="form">
+					<input type="email" name="user_email" class="form_price-email" placeholder="ВВЕДИТЕ ВАШ E-MAIL">
+					<input type="tel" name="user_phone" class="form_price-tel" placeholder="ВВЕДИТЕ ВАШ ТЕЛЕФОН"><br>
 					<p class="form_price-direction">Прайс придет к Вам на почту в течение 5&nbsp;минут!</p>
 					<button type="submit" class="form_price-button">Получить прайс</button>
 				</form>
@@ -112,9 +112,9 @@
 		<div class="container">
 			<h2 class="uznat-price_head">Ищете конкретную деталь?</h2>
 			<p class="uznat-price_direction">Если у Вас есть артикул - введите его в поле ниже и получите цену <br>ПРЯМО СЕЙЧАС!</p>
-			<form action="#" class="form">
-				<input type="text" class="uznat-price-artykul" placeholder="Введите артикул детали">
-				<input type="tel" class="uznat-price-tel" placeholder="Введите ваш телефон">				
+			<form action="mail.php" method="GET" class="form">
+				<input type="text" name="u_name" class="uznat-price-artykul" placeholder="Введите артикул детали">
+				<input type="text" name="u_phone" class="uznat-price-tel" placeholder="Введите ваш телефон">				
 				<button type="submit" class="uznat-price-button">Узнать цену</button>
 			</form>
 			<p>Мы перезвоним вам в течение 3 минут и назовем цену детали!</p>
