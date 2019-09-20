@@ -210,7 +210,7 @@ input {
 [data-tooltip]::after {
   content: attr(data-tooltip);
   position: absolute;
-  width: 330px;
+  width: 250px;
   height: 147px;
   padding: 10px 20px;
   left: 0;
@@ -319,19 +319,25 @@ input {
   .belaz {
     min-height: 600px; }
     .belaz-advantage {
-      max-width: 98%;
+      max-width: 95%;
       max-height: 600px; }
+      .belaz-advantage__list_l {
+        font-size: 14px; }
+    .belaz h2 {
+      font-size: 26px; }
     .belaz .head-direction {
-      padding-bottom: 30px; }
+      padding-bottom: 30px;
+      font-size: 16px; }
 
   .get_price .form_price-direction {
     padding: 10px 0;
     margin: 0; }
 
   .form_price {
-    padding-left: 28%; }
+    padding-left: 24%; }
     .form_price-header {
-      text-align: center; }
+      text-align: center;
+      margin-right: 6%; }
     .form_price .form {
       width: 180px;
       float: none; }
