@@ -1,0 +1,58 @@
+@import '../../assets/css/colors.sass'
+.header
+	padding: 10px 0
+	.account
+		&-star
+			margin: 0
+			margin-bottom: 13px
+			margin-top: 15px
+		&-mail 
+			margin: 0
+			line-height: 0
+			color: $text
+			font-size: 14px
+.logo
+	width: 134px
+	height: 24px
+	img
+		max-width: 100%
+.menu-line
+	display: none
+.nav_menu
+	list-style: none
+	display: flex
+	li
+		margin-right: 29px
+		&:last-child
+			margin-right: 0
+		a
+			text-decoration: none
+			color: $black
+			line-height: 3.75
+			&:hover
+				color: $hover_col
+			&:active
+				color: $blue
+.account
+	display: flex
+	.block-super
+		&:first-child
+			margin-right: 15px
+	&-superstar
+		margin: 0
+		font-size: 14px
+		text-align: right
+	&-email
+		font-size: 12px
+		line-height: 0
+		color: $text
+		text-align: right
+	&-photo_user
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		margin-right: 14px
+		vertical-align: middle
+	&-out
+		vertical-align: middle
+		cursor: pointer

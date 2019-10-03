@@ -1,0 +1,19 @@
+<section class="our_users" id="our_users">
+	<div class="container">
+		<h2>{{user_title}}</h2>
+		<p class="our_users-direction">Attention! Sorting users by registration date</p>
+		<div class="row justify-content-center">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-10" *ngFor="let user of users">
+				<img src="{{user.photo}}" alt="">
+				<div class="our_users-block_direction">
+					<h3>{{user.name}}</h3>
+					<p>{{user.position}}</p>
+					<p>{{user.email}}</p>
+					<p>{{user.phone}}</p>
+				</div>
+			</div>
+			<button type="button" class="btn-primary-border" (click)="Add()">Show more</button>
+		</div>
+		<!-- /.row -->
+	</div>
+</section>

@@ -1,0 +1,33 @@
+<header class="header">
+	<div class="container">
+		<div class="row justify-content-between align-items-center">
+			<div class="col-lg-2 col-md-3">
+				<div class="logo">
+					<img src="assets/imgs/logo/logo.svg" alt="abz">
+				</div>
+			</div>
+			<div class="menu col-lg-6 col-md-6">
+					<ul class="nav_menu">
+						<li *ngFor = "let name of names">
+							<a href="{{name.href}}">{{name.name}}</a>
+						</li>
+					</ul>
+			</div>
+			<div class="menu col-lg-3 col-md-3">
+				<div class="account">
+					<div class="block-super">
+						<p class="account-superstar">{{response.user.name}}</p>
+						<p class="account-email">{{response.user.email}}</p>	
+					</div>					
+					<div class="block-super">
+						<img class="account-photo_user" src="{{response.user.photo}}" alt="">
+						<img class="account-out" src="assets/imgs/icons/sign-out.svg" alt="sign-out" onmouseover="this.src = 'assets/imgs/icons/sign-out-hover.svg'" onmouseout="this.src = 'assets/imgs/icons/sign-out.svg'">
+					</div>						
+				</div>
+			</div>
+		</div>
+		<div class="menu-line">
+			<img src="assets/imgs/icons/line-menu.svg" alt="">
+		</div>						
+	</div>
+</header>

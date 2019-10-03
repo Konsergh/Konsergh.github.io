@@ -1,0 +1,31 @@
+<section class="register" id="registration">
+	<div class="container">
+		<h2>{{reg_title}}</h2>
+		<p>Attention! After successful registration and alert, update the list of users in the block from the top</p>
+		<div class="register-form">
+			<form action="#" class="form">
+				<label for="name" class="n-name">Name</label>
+				<input type="text" name="name" id="name" class="register-input" placeholder="Your name">
+				<label for="email" class="n-email">Email</label>
+				<input type="email" name="email" id="email" class="register-input" placeholder="Your email">
+				<label for="phone" class="n-phone">Phone</label>
+				<input type="tel" name="phone" id="phone" class="register-input" placeholder="+38(___) ___-__-__">
+				<div class="block-select_upload">
+						<select name="position-select" id="inputSelect" class="select-file">
+							<option value="0" selected>Select your position</option>
+							<option value="{{position.id}}" *ngFor="let position of positions">{{position.name}}</option>
+						</select>
+					<div class="upload-input">
+						<span class="span">Upload your photo</span>
+						<input type="file" name="file" id="file">
+						<label for="file" id="upload"><span id="upl_span">Upload</span></label>
+						<small class="format_file">File format jpg  up to 5 MB, the minimum size of 70x70px</small>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="block-button">
+			<button class="btn btn-disabled">Sign Up</button>
+		</div>
+	</div>
+</section>

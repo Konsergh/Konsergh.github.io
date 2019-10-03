@@ -1,0 +1,63 @@
+@import '../../assets/css/colors.sass'
+.dark-block
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background: rgba(0,0,0,0.3)
+	z-index: 98
+.logo
+	width: 134px
+	height: 24px
+	img
+		max-width: 100%
+.menu
+	&-nav
+		position: fixed
+		top: 0
+		background: $white
+		left: -300px
+		height: 100%
+		z-index: 99
+		padding-top: 30px
+		width: 300px
+		.block_nav
+			padding-left: 20px
+		.menus
+			border-bottom: 2px solid rgba(0,0,0,0.1)
+			padding-bottom: 50px
+		&-photo_user
+			width: 70px
+			height: 70px
+			border-radius: 50%
+		.block-super
+			text-align: left
+		.account
+			&-star
+				margin: 0
+				margin-bottom: 13px
+				margin-top: 15px
+			&-mail 
+				margin: 0
+				line-height: 0
+				color: $text
+				font-size: 14px
+		&-link
+				list-style: none
+				display: flex
+				flex-flow: column
+				padding: 0
+				li
+					padding: 0
+					&:last-child
+						margin-right: 0
+					a
+						text-decoration: none
+						color: $black
+						line-height: 3.75
+						&:hover
+							color: $hover_col
+						&:active
+							color: $blue

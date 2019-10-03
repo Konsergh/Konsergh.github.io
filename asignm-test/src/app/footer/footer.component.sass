@@ -1,0 +1,60 @@
+@import '../../assets/css/colors.sass'
+
+.footer
+	background: $blue
+	padding-bottom: 30px
+	.logo
+		color: $white
+	.nav_menu
+		list-style: none
+		display: flex
+		li
+			margin-right: 29px
+			&:last-child
+				margin-right: 0
+			a
+				text-decoration: none
+				color: $white
+				line-height: 3.75
+				&:hover
+					color: $hover_col
+				&:active
+					color: $blue
+	&_menu 	
+		padding: 20px 0
+	ul
+		li 
+			a
+				color: $white
+	hr 
+		margin: 0
+		margin-bottom: 30px
+		opacity: 0.5
+	.contact
+		color: $white
+		float: left
+		font-size: 20px
+		&-img
+			margin-right: 10px
+			vertical-align: middle
+	&-nav-menu
+		text-align: right
+		ul 
+			list-style: none
+			li 
+				margin-bottom: 15px
+				a 
+					text-decoration: none
+					color: $white
+					&:hover
+						color: $hover_col
+	small
+		color: $white
+		font-size: 12px
+	&-social-link
+		display: flex
+		justify-content: space-between
+		margin-top: 40px
+	.social-icons
+		a 
+			margin-left: 25px
