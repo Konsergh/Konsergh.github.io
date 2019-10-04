@@ -1,0 +1,25 @@
+svg:hover #facebook{
+	fill: #fc831f;
+	cursor: pointer;
+}
+svg:hover #twitter {
+	fill: #fc831f;
+	cursor: pointer;
+
+}
+svg:hover #linkedin {
+	fill: #fc831f;
+	cursor: pointer;
+}
+svg:hover #instagram {
+	fill: #fc831f;
+	cursor: pointer;
+}
+svg:hover #pinterest {
+	fill: #fc831f;
+	cursor: pointer;
+}
+path{
+	fill: inherit;
+	stroke:inherit;
+}
