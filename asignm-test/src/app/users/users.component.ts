@@ -13,21 +13,25 @@ export class UsersComponent implements OnInit {
 
 	user_title = 'Our cheerful users';  	
   	users;
-  	count=6;
+    api_url;
+
 	constructor(private userService: UserService){  }
 
   ngOnInit() {
   	this.userService.getData()
 		.subscribe(users => {
 		this.users = users["users"];
-		console.log(users);
-		console.log(users["links"]);		
+		// console.log(users);
+    this.api_url = users["links"]['next_url'];
+		// console.log(this.api_url);		
 	});
-		this.count = this.userService.count;
+
   }
   Add(){
-  	this.userService.count += this.count;
-  	this.userService.setCount(this.userService.count);
-  	console.log(this.userService.count);
-  }
-}
+  	this.userService.setApi(this.api_url);
+    this.userService.getData_new()
+    .subscribe(users => {
+    this.users = users["users"];
+    this.api_url = users["links"]['next_url'];
+  })
+}}

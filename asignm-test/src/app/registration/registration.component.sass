@@ -24,27 +24,27 @@
 		padding: 0 16px
 	.n-name
 		position: absolute
-		top: 57px
+		top: 56px
 		left: 16px
 		background: $white
 		font-size: 12px
-		padding: 0 2px
+		padding: 0 3px
 		color: $text
 	.n-email
 		position: absolute
-		top: 57px
+		top: 56px
 		left: 34.5%
 		background: $white
 		font-size: 12px
-		padding: 0 2px
+		padding: 0 3px
 		color: $text
 	.n-phone
 		position: absolute
-		top: 57px
+		top: 56px
 		left: 68%
 		background: $white
 		font-size: 12px
-		padding: 0 2px
+		padding: 0 3px
 		color: $text
 	#phone
 		margin-right: 0
@@ -56,9 +56,12 @@
 		border: 1px solid #b7b7b7
 		margin-right: 30px
 		padding: 0 16px
-		option
-			height: 40px
-			background: yellow
+		&:after
+			border: 20px solid transparent
+			border-top: 20px solid #000
+			margin-left: 100px
+		option[selected]
+			color: $hover_col
 	#file
 		display: none
 	.upload-input
@@ -74,9 +77,9 @@
 			left: 16px
 	#upload
 		position: absolute
-		right: 0
-		top: 0
-		bottom: 0
+		right: -1px
+		top: -1px
+		bottom: -1px
 		border-top-right-radius: 4px
 		border-bottom-right-radius: 4px
 		border: 2px solid $btn_primary

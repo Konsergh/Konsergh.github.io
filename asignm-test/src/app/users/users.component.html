@@ -11,9 +11,11 @@
 					<p>{{user.email}}</p>
 					<p>{{user.phone}}</p>
 				</div>
-			</div>
-			<button type="button" class="btn-primary-border" (click)="Add()">Show more</button>
+			</div>			
 		</div>
 		<!-- /.row -->
+		<div class="button-block">
+			<button type="button" class="btn-primary-border" (click)="Add()" *ngIf="api_url">Show more</button>
+		</div>
 	</div>
 </section>
