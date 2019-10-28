@@ -1,0 +1,348 @@
+@import '../css/stylesheet.css'
+$white: #fff
+$hover-red: #ba1d41
+$btn-color: #db3259
+body
+	padding: 0
+	margin: 0
+	box-sizing: border-box
+	font-family: 'Roboto Regular'
+	background: url('../imgs/Background.jpg') no-repeat top / cover
+.container
+	max-width: 1170px
+	padding: 0 15px
+	margin: 0 auto
+.header	
+	color: $white
+	&-top
+		background: linear-gradient(0.25turn, #13445a, #631123)
+	&-up
+		display: flex
+		justify-content: space-between
+		align-items: center
+		.logo
+			cursor: pointer
+			span
+				font-family: 'Roboto Bold', sans-serif
+				font-size: 18px
+			b
+				color: #db3259
+				font-size: 24px
+		.nav-menu-list
+			display: flex
+			list-style: none
+			font-size: 14px
+			li
+				margin-left: 20px
+				border-left: 1px dotted rgba(255,255,255,0.2)
+				padding: 13px 0
+				&:first-child
+					border: none
+				a
+					text-decoration: none
+					color: $white
+					margin-left: 20px
+					&:hover
+						color: $hover-red
+						transition: 0.2s
+		.more
+			border-left: 1px dotted rgba(255,255,255,0.2)
+			border-right: 1px dotted rgba(255,255,255,0.2)
+			padding: 7px 20px
+			img
+				cursor: pointer
+			span
+				display: block
+				font-family: 'Roboto Regular', sans-serif
+				font-size: 12px
+				text-transform: uppercase
+				cursor: pointer
+	&-down
+		background: rgba(0,0,0,0.2)
+	&-bottom
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 13px 0
+		.calendar
+			display: flex
+			input
+				margin-right: 5px
+		.sliders
+			width: 50%
+			padding: 0 30px
+		.slider-emblems
+			display: flex
+			align-items: center
+			&-emblem
+				position: relative
+				width: 51px
+				height: 51px
+				border-radius: 50%
+				border: 1px solid $white
+				text-align: center
+				margin: 0 3px
+				img
+					position: absolute
+					max-width: 100%
+					top: 50%					
+					left: 50%
+					transform: translate(-50%,-50%)
+.btn
+	padding: 12px 30px
+	background: $btn-color
+	color: $white
+	border: none
+	border-radius: 4px
+	cursor: pointer
+	outline: none
+	&:hover
+		background: $hover-red
+	&-blue
+		padding: 12px 20px
+		background: #1a506c
+		color: $white
+		border: none
+		border-radius: 4px
+		cursor: pointer
+		outline: none
+		&:hover
+			background: #0c384e
+.path-menu
+	&-block
+		padding: 13px 0
+		color: $white
+		font-family: 'Roboto Light'
+		font-size: 13px
+/*====MAIN====//*/
+.main-content
+	display: flex
+	flex-flow: row
+	justify-content: space-between
+	width: 100%
+.block-rates
+	display: flex
+	align-items: center
+	background: $white
+	padding: 32px 0
+	margin: 6px 0
+	width: 100%
+	.rates-leader
+			font-family: 'Roboto Regular'
+			font-size: 14px
+			font-weight: bolder
+			color: #3b3b3b
+	&-logo
+		padding: 0 32px
+		img
+			max-width: 100%
+	&-sparring
+		padding-left: 25px
+		margin-right: 100px
+		border-left: 1px solid #d1e4ed
+		&-leader
+			margin-top: 17px
+			display: flex
+			align-items: center
+		span.rates-leader
+			margin-right: 60px
+		h3
+			font-family: 'Roboto Bold'
+			font-size: 18px
+			color: #3b3b3b
+		p 
+			font-family: 'Roboto Light'
+			font-size: 13px
+			color: #898989
+	&-result
+		padding: 0 23px
+		border-left: 1px solid #d1e4ed
+		text-align: center
+.btn-show-more
+	width: 100%
+	padding: 20px
+	background: $btn-color
+	color: $white
+	border: none
+	border-radius: 4px
+	cursor: pointer
+	outline: none
+	font-family: 'Roboto Regular'
+	font-size: 14px
+	&:hover
+		background: $hover-red
+.news
+	margin-left: 30px
+	width: 36%
+	&-subscribe
+		text-align: center
+		background: #1a506c
+		margin: 6px 0
+		padding: 33px 20px
+		color: $white
+		h2
+			font-family: 'Roboto Black'
+			font-size: 18px
+			margin: 0
+			text-transform: uppercase
+			padding: 0
+		p 
+			font-family: 'Roboto Regular'
+			font-size: 14px
+			margin: 0
+			margin-bottom: 20px
+			padding: 0
+		.form
+			padding: 0
+			width: 100%
+			display: flex
+			flex-flow: wrap row
+			justify-content: center
+			&-block
+				width: 100%
+			input			
+				width: 70%
+				padding: 4%
+				outline: none
+				border: none
+				border-top-left-radius: 4px
+				border-bottom-left-radius: 4px
+				font-family: 'Roboto Light'
+				font-size: 13px
+		.btn-ok
+			font-family: 'Roboto Bold'
+			font-size: 14px
+			padding: 4%
+			background: $btn-color
+			color: $white
+			border: none
+			cursor: pointer
+			outline: none
+			text-transform: uppercase
+			border-top-right-radius: 4px
+			border-bottom-right-radius: 4px
+	&-new 
+		display: flex
+		background: $white
+		height: 125px
+		padding-left: 6%
+		margin: 4px 0
+		overflow: hidden
+		h3
+			font-family: 'Roboto Black'
+			font-size: 15px
+			color: #2e2e2e
+		&-content
+			margin-right: 5%
+		&-date
+			margin-bottom: 26px
+			font-family: 'Roboto Light'
+			font-size: 13px
+			color: #898989
+		&-img
+			img
+				width: 120px
+				height: 125px
+.free-rates
+	color: $white
+	padding: 50px 0
+	&-title
+		font-family: 'Roboto Bold'
+		font-size: 18px
+		margin: 0
+	&-description
+		font-family: 'Roboto Light'
+		font-size: 14px
+.footer
+	background: #0c364a
+	padding: 25px 0
+	&-content
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&-copy
+		font-family: 'Roboto Light'
+		font-size: 13px
+		color: $white
+/*========CALENDAR==========//*/
+#calendar-modal
+	display: none
+	position: absolute
+	width: 100%
+	height: 100%
+	background: rgba(0,0,0,0.3)
+#calendar
+	position: absolute
+	top: -6px
+	left: 312px
+	width: 245px
+	font: monospace
+	line-height: 1.2em
+	font-size: 14px
+	text-align: center
+	background: $white
+	border-radius: 4px
+	border-collapse: collapse
+#calendar thead tr:last-child
+	font-size: small
+	color: $btn-color
+	background: #f6e5e9
+	th
+		padding: 16px
+		text-transform: uppercase
+		font-size: 10px
+#calendar thead tr:nth-child(1) 
+	border-radius: 4px
+	td
+		color: $white
+		background: $btn-color
+		border: none
+		padding: 20px
+		font-size: 13px
+#calendar thead tr:nth-child(1) td:nth-child(1):hover, #calendar thead tr:nth-child(1) td:nth-child(3):hover 
+	cursor: pointer
+
+#calendar tbody tr td
+	color: #6c7174
+	border: 1px solid rgba(0,0,0,0.1)
+	padding: 10px
+	cursor: pointer
+
+#calendar tbody td:nth-child(n+6), #calendar .holiday 
+	color: $btn-color
+#calendar tbody td.today 
+	border-bottom: 5px solid $btn-color
+	color: #000
+/*///////==============MEDIA============//////////*/
+@media (max-width: 1200px)
+	.container
+		max-width: 1170px
+@media (max-width: 992px)
+	.container
+		max-width: 960px
+	.nav-menu-list
+		padding: 0
+		font-size: 13px
+		li
+			margin-left: 10px
+@media (max-width: 768px)
+	.container
+		max-width: 720px
+	.nav-menu
+		display: none
+	.header-bottom
+		flex-flow: wrap column
+		flex-direction: column-reverse
+	.sliders
+		width: 90%!important
+	.slider-emblems
+		margin-bottom: 10px
+	.main-content
+		display: flex
+		flex-flow: wrap column
+	.news
+		width: 100%
+		margin-left: 0
+@media (max-width: 576px)
+	.container
+		max-width: 540px
