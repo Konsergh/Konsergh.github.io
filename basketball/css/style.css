@@ -176,7 +176,8 @@ body {
     background: #ba1d41; }
 
 .news {
-  width: 36%; }
+  width: 36%;
+  margin-left: 6px; }
   .news-subscribe {
     text-align: center;
     background: #1a506c;
@@ -332,11 +333,16 @@ body {
   .container {
     max-width: 960px; }
 
+  .btn {
+    padding: 10px 20px; }
+
   .nav-menu-list {
     padding: 0;
     font-size: 13px; }
     .nav-menu-list li {
       margin-left: 10px; }
+      .nav-menu-list li:nth-child(5), .nav-menu-list li:nth-child(6) {
+        display: none; }
 
   .news {
     margin-left: 2%; } }
@@ -360,11 +366,10 @@ body {
   .main-content {
     display: flex;
     flex-flow: wrap column; }
-
-  .news {
-    width: 100%;
-    margin-top: 6px !important;
-    margin-left: 0; } }
+    .main-content .news {
+      width: 100%;
+      margin-top: 6px;
+      margin-left: 0; } }
 @media (max-width: 576px) {
   .container {
     max-width: 540px; }

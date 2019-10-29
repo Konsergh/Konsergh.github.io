@@ -173,6 +173,7 @@ body
 		background: $hover-red
 .news
 	width: 36%
+	margin-left: 6px
 	&-subscribe
 		text-align: center
 		background: #1a506c
@@ -319,11 +320,15 @@ body
 @media (max-width: 992px)
 	.container
 		max-width: 960px
+	.btn
+		padding: 10px 20px
 	.nav-menu-list
 		padding: 0
 		font-size: 13px
 		li
 			margin-left: 10px
+			&:nth-child(5), &:nth-child(6)
+				display: none
 	.news 
 		margin-left: 2%
 @media (max-width: 768px)
@@ -342,10 +347,10 @@ body
 	.main-content
 		display: flex
 		flex-flow: wrap column
-	.news
-		width: 100%
-		margin-top: 6px!important
-		margin-left: 0
+		.news
+			width: 100%
+			margin-top: 6px
+			margin-left: 0
 @media (max-width: 576px)
 	.container
 		max-width: 540px
