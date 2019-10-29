@@ -124,7 +124,7 @@ body
 	display: flex
 	align-items: center
 	background: $white
-	padding: 32px 0
+	padding: 4% 0
 	margin: 6px 0
 	width: 100%
 	.rates-leader
@@ -133,11 +133,11 @@ body
 			font-weight: bolder
 			color: #3b3b3b
 	&-logo
-		padding: 0 32px
+		padding: 0 4%
 		img
 			max-width: 100%
 	&-sparring
-		padding-left: 25px
+		padding-left: 3%
 		margin-right: 100px
 		border-left: 1px solid #d1e4ed
 		&-leader
@@ -145,7 +145,7 @@ body
 			display: flex
 			align-items: center
 		span.rates-leader
-			margin-right: 60px
+			margin-right: 8%
 		h3
 			font-family: 'Roboto Bold'
 			font-size: 18px
@@ -155,7 +155,7 @@ body
 			font-size: 13px
 			color: #898989
 	&-result
-		padding: 0 23px
+		padding: 0 4%
 		border-left: 1px solid #d1e4ed
 		text-align: center
 .btn-show-more
@@ -172,7 +172,6 @@ body
 	&:hover
 		background: $hover-red
 .news
-	margin-left: 30px
 	width: 36%
 	&-subscribe
 		text-align: center
@@ -325,6 +324,8 @@ body
 		font-size: 13px
 		li
 			margin-left: 10px
+	.news 
+		margin-left: 2%
 @media (max-width: 768px)
 	.container
 		max-width: 720px
@@ -342,7 +343,13 @@ body
 		flex-flow: wrap column
 	.news
 		width: 100%
+		margin-top: 6px!important
 		margin-left: 0
 @media (max-width: 576px)
 	.container
 		max-width: 540px
+	.block-rates
+		&-sparring
+			margin-right: 3%
+	.sliders
+		padding: 0
