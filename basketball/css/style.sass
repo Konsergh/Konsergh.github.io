@@ -60,6 +60,7 @@ body
 	&-down
 		background: rgba(0,0,0,0.2)
 	&-bottom
+		position: relative
 		display: flex
 		justify-content: space-between
 		align-items: center
@@ -68,6 +69,10 @@ body
 			display: flex
 			input
 				margin-right: 5px
+		#calendar-btn
+			background: $btn-color url('../imgs/calendar-icon.png') no-repeat 20px
+			padding-left: 48px
+			padding-right: 20px
 		.sliders
 			width: 50%
 			padding: 0 30px
@@ -269,12 +274,12 @@ body
 	display: none
 	position: absolute
 	width: 100%
-	height: 100%
+	height: 100vh
 	background: rgba(0,0,0,0.3)
 #calendar
 	position: absolute
-	top: -6px
-	left: 312px
+	top: -7px
+	left: 23%
 	width: 245px
 	font: monospace
 	line-height: 1.2em
@@ -288,7 +293,7 @@ body
 	color: $btn-color
 	background: #f6e5e9
 	th
-		padding: 16px
+		padding: 4%
 		text-transform: uppercase
 		font-size: 10px
 #calendar thead tr:nth-child(1) 
@@ -313,6 +318,33 @@ body
 #calendar tbody td.today 
 	border-bottom: 5px solid $btn-color
 	color: #000
+/*//////////////============MORE TEAMS=============/////////////*/
+.more-teams
+	display: none
+	position: absolute
+	top: 0
+	right: 0
+	background: #1a506c
+	width: 30%
+	z-index: 99
+	&-list
+		list-style: none
+		color: $white
+		padding: 0
+		li 
+			padding: 4%
+			border-bottom: 1px solid rgba(255,255,255,.3)
+			cursor: pointer
+			&:hover
+				background: #154056
+				border: none
+			&:nth-child(1), &:nth-child(2)
+				display: none
+			a 
+				text-decoration: none
+				color: $white
+			&:last-child
+				border-bottom: none
 /*///////==============MEDIA============//////////*/
 @media (max-width: 1200px)
 	.container
@@ -329,6 +361,12 @@ body
 			margin-left: 10px
 			&:nth-child(5), &:nth-child(6)
 				display: none
+	.more-teams
+		width: 40%
+		&-list
+			li
+				&:nth-child(1), &:nth-child(2)
+					display: block
 	.news 
 		margin-left: 2%
 @media (max-width: 768px)
@@ -344,6 +382,8 @@ body
 			padding: 0
 	.slider-emblems
 		margin-bottom: 10px
+	.more-teams
+		width: 50%
 	.main-content
 		display: flex
 		flex-flow: wrap column
@@ -359,3 +399,9 @@ body
 			margin-right: 3%
 	.sliders
 		padding: 0
+	#calendar
+		left: 16%
+		&-modal
+			text-align: center
+	.more-teams
+		width: 70%

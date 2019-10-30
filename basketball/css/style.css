@@ -2,7 +2,8 @@
 body {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Roboto Regular";
   background: url("../imgs/Background.jpg") no-repeat top/cover; }
 
@@ -14,11 +15,19 @@ body {
 .header {
   color: #fff; }
   .header-top {
+    background: -webkit-gradient(linear, left top, right top, from(#13445a), to(#631123));
+    background: -o-linear-gradient(left, #13445a, #631123);
     background: linear-gradient(0.25turn, #13445a, #631123); }
   .header-up {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .header-up .logo {
       cursor: pointer; }
       .header-up .logo span {
@@ -28,6 +37,8 @@ body {
         color: #db3259;
         font-size: 24px; }
     .header-up .nav-menu-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       list-style: none;
       font-size: 14px; }
@@ -43,6 +54,8 @@ body {
           margin-left: 20px; }
           .header-up .nav-menu-list li a:hover {
             color: #ba1d41;
+            -webkit-transition: 0.2s;
+            -o-transition: 0.2s;
             transition: 0.2s; }
     .header-up .more {
       border-left: 1px dotted rgba(255, 255, 255, 0.2);
@@ -59,20 +72,37 @@ body {
   .header-down {
     background: rgba(0, 0, 0, 0.2); }
   .header-bottom {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 13px 0; }
     .header-bottom .calendar {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex; }
       .header-bottom .calendar input {
         margin-right: 5px; }
+    .header-bottom #calendar-btn {
+      background: #db3259 url("../imgs/calendar-icon.png") no-repeat 20px;
+      padding-left: 48px;
+      padding-right: 20px; }
     .header-bottom .sliders {
       width: 50%;
       padding: 0 30px; }
     .header-bottom .slider-emblems {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center; }
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
       .header-bottom .slider-emblems-emblem {
         position: relative;
         width: 51px;
@@ -86,7 +116,9 @@ body {
           max-width: 100%;
           top: 50%;
           left: 50%;
-          transform: translate(-50%, -50%); }
+          -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%); }
 
 .btn {
   padding: 12px 30px;
@@ -117,14 +149,25 @@ body {
 
 /*====MAIN====// */
 .main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%; }
 
 .block-rates {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #fff;
   padding: 4% 0;
   margin: 6px 0;
@@ -144,8 +187,12 @@ body {
     border-left: 1px solid #d1e4ed; }
     .block-rates-sparring-leader {
       margin-top: 17px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center; }
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
     .block-rates-sparring span.rates-leader {
       margin-right: 8%; }
     .block-rates-sparring h3 {
@@ -199,9 +246,16 @@ body {
     .news-subscribe .form {
       padding: 0;
       width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-flow: wrap row;
-      justify-content: center; }
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: wrap row;
+              flex-flow: wrap row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
       .news-subscribe .form-block {
         width: 100%; }
       .news-subscribe .form input {
@@ -226,6 +280,8 @@ body {
       border-top-right-radius: 4px;
       border-bottom-right-radius: 4px; }
   .news-new {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background: #fff;
     height: 125px;
@@ -262,9 +318,15 @@ body {
   background: #0c364a;
   padding: 25px 0; }
   .footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .footer-copy {
     font-family: "Roboto Light";
     font-size: 13px;
@@ -275,13 +337,13 @@ body {
   display: none;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.3); }
 
 #calendar {
   position: absolute;
-  top: -6px;
-  left: 312px;
+  top: -7px;
+  left: 23%;
   width: 245px;
   font: monospace;
   line-height: 1.2em;
@@ -296,7 +358,7 @@ body {
   color: #db3259;
   background: #f6e5e9; }
   #calendar thead tr:last-child th {
-    padding: 16px;
+    padding: 4%;
     text-transform: uppercase;
     font-size: 10px; }
 
@@ -325,6 +387,34 @@ body {
   border-bottom: 5px solid #db3259;
   color: #000; }
 
+/*//////////////============MORE TEAMS=============///////////// */
+.more-teams {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #1a506c;
+  width: 30%;
+  z-index: 99; }
+  .more-teams-list {
+    list-style: none;
+    color: #fff;
+    padding: 0; }
+    .more-teams-list li {
+      padding: 4%;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      cursor: pointer; }
+      .more-teams-list li:hover {
+        background: #154056;
+        border: none; }
+      .more-teams-list li:nth-child(1), .more-teams-list li:nth-child(2) {
+        display: none; }
+      .more-teams-list li a {
+        text-decoration: none;
+        color: #fff; }
+      .more-teams-list li:last-child {
+        border-bottom: none; }
+
 /*///////==============MEDIA============////////// */
 @media (max-width: 1200px) {
   .container {
@@ -344,6 +434,11 @@ body {
       .nav-menu-list li:nth-child(5), .nav-menu-list li:nth-child(6) {
         display: none; }
 
+  .more-teams {
+    width: 40%; }
+    .more-teams-list li:nth-child(1), .more-teams-list li:nth-child(2) {
+      display: block; }
+
   .news {
     margin-left: 2%; } }
 @media (max-width: 768px) {
@@ -354,8 +449,12 @@ body {
     display: none; }
 
   .header-bottom {
-    flex-flow: wrap column;
-    flex-direction: column-reverse; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap column;
+            flex-flow: wrap column;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse; }
     .header-bottom .sliders {
       width: 90%;
       padding: 0; }
@@ -363,9 +462,17 @@ body {
   .slider-emblems {
     margin-bottom: 10px; }
 
+  .more-teams {
+    width: 50%; }
+
   .main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: wrap column; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap column;
+            flex-flow: wrap column; }
     .main-content .news {
       width: 100%;
       margin-top: 6px;
@@ -378,6 +485,14 @@ body {
     margin-right: 3%; }
 
   .sliders {
-    padding: 0; } }
+    padding: 0; }
 
-/*# sourceMappingURL=style.css.map */
+  #calendar {
+    left: 16%; }
+    #calendar-modal {
+      text-align: center; }
+
+  .more-teams {
+    width: 70%; } }
+
+/*# sourceMappingURL=to.css.map */
