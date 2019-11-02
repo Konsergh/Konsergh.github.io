@@ -1,11 +1,16 @@
 $(document).ready(function($) {
 	//calendar
 	var btnCalendar = $('#calendar-btn');
-	var calendar = $('#calendar-modal');
-	var calendarMod = $('#calendar');
-		btnCalendar.click(function(event) {
-			calendar.toggle();
+	var calendarMod = $('#calendar-modal');
+	var calendar = $('#calendar_table');
+		btnCalendar.click(function() {
+			calendarMod.toggle();
+			calendar.toggle('fast');
 		});	
+		calendarMod.click(function() {
+			calendarMod.hide();
+			calendar.hide('fast');
+		});
 	/////////===DATE===////////
 	function addZero(i) {
 	    if (i < 10) {
